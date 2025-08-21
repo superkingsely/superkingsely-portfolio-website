@@ -8,6 +8,7 @@
 export interface NavItem {
   name: "home" | "projects" | "about" | "contact"; // name of the nav
   url: string; // where it points to (e.g. "/projects")
+  id:string
 }
 
 // 👇 This describes the navigation store

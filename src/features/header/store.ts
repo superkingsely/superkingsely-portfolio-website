@@ -3,10 +3,10 @@ import { NavItem, NavState } from "./types";
 
 // 👇 All navigation items in one place
 const navItems: NavItem[] = [
-  { name: "home", url: "/" },
-  { name: "projects", url: "/projects" },
-  { name: "about", url: "/about" },
-  { name: "contact", url: "/contact" },
+  { name: "home", url: "/" ,id:'#home'},
+  { name: "about", url: "/about" ,id:'#about'},
+  { name: "projects", url: "/projects",id:'#projects' },
+  { name: "contact", url: "/contact",id:'#contact' },
 ];
 
 // 👇 Zustand store
