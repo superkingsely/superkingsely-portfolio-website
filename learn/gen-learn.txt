@@ -1,0 +1,7 @@
+I recommend you start with:
+
+TanStack Query (React Query) — master it (big demand, perfect for Next.js).
+
+Zustand — lightweight client state, very popular and easier than Redux.
+
+Redux Toolkit — learn later for enterprise-level interviews.

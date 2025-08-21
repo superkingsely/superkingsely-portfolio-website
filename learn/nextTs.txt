@@ -1,0 +1,40 @@
+my-portfolio/
+│── public/                 # Static assets (profile image, favicon, etc.)
+│── src/
+│   ├── app/                # App router (Next.js 13+)
+│   │   ├── layout.tsx      # Root layout
+│   │   ├── page.tsx        # Home page
+│   │   └── about/page.tsx  # About page (example)
+│   │
+│   ├── components/         # Reusable UI components
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── styles/             # Global styles
+│   │   └── globals.css
+│   │
+│   ├── lib/                # Helpers / utils (for later)
+│   ├── types/              # TypeScript types (for later)
+│   └── config/             # App constants/configs (for later)
+│
+│── learn.txt               # Your personal learning notes
+│── package.json
+│── tsconfig.json
+│── next.config.js
+│── postcss.config.js
+│── tailwind.config.js      # If you choose Tailwind
+
+
+starte management
+
+src/
+ ├── features/
+ │    ├── auth/
+ │    │    ├── store.ts   # Zustand (client state)
+ │    │    ├── api.ts     # React Query hooks (server state)
+ │    │    └── types.ts
+ │    └── projects/
+ │         ├── store.ts
+ │         ├── api.ts
+ │         └── types.ts
+ auth projects nav and all that
