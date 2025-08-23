@@ -5,7 +5,7 @@ import img1 from '../../public/images/FB_IMG_1748168596292.jpg'
 
 const HeroSection = () => {
   return (
-    <div className="content max-w-[1200px] mx-auto ">
+    <div className="content max-w-[1200px] mx-auto px-[20px] md:px-[0px] ">
 
       <div className="flex flex-col-reverse sm:flex-row   pt-[50px] md:pt-[100px] min-h-[80vh] ">
         {/* box1 */}
