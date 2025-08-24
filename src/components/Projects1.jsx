@@ -13,14 +13,14 @@ const Projects1 = () => {
             <div className="title">
                 <Title word1='My Awesome' word2='Projects'/>
             </div>
-            <div className="slider  border flex justify-center px-[20px] md:px-[50px] relative mt-[30px] ">
-                <div className="slide group relative flex justify-center border w-full max-w-[900px] shadow-lg min-h-[60vh] p-[40px] ">
+            <div className="slider   flex justify-center px-[20px] md:px-[50px] relative mt-[30px] ">
+                <div className="slide group relative flex justify-center  w-full max-w-[900px] shadow-lg min-h-[60vh] p-[40px] ">
                     <div className="img max-w-[900px] h-[60vh] ">
                         <Image width={100} height={100} src={img1} alt=''/>
                     </div>
                     
                     <div className="cover absolute bottom-0 w-full transition-all duration-1000 ease-linear h-0 group-hover:h-full bg-[rgba(0,0,0,0.5)] cursor-pointer overflow-hidden  ">
-                        <Link href={'/html-css-js'} className='flex flex-col justify-center items-center gap-[20px] border h-[inherit] ' >
+                        <Link href={'/html-css-js'} className='flex flex-col justify-center items-center gap-[20px]  h-[inherit] ' >
 
                         <div className="title">
                             <span className='text-white md:text-[70px] text-[40px] font-bold ' >HTMl CSS JS Project</span>
