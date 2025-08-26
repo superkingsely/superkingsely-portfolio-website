@@ -2,5 +2,6 @@
 export interface Project{
     name:string,
     url:string,
-    image:string
+    image: any ,
+    des:string
 }

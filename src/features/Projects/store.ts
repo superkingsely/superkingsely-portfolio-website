@@ -2,6 +2,13 @@
 // store/projectStore.ts
 import { create } from "zustand";
 import { Project } from "./types";
+import imgHtml from '../../../public/asset2/html-css-js.png'
+import reactimg from '../../../public/asset2/react-logo.png'
+import angularimg from '../../../public/asset2/angular.png'
+import dotnetmvcimg from '../../../public/asset2/asp.net.png'
+import dotnetwebapiimg from '../../../public/asset2/dotnet-bot.png'
+import nodejsimg from '../../../public/asset2/nodejslogo.png'
+import nextimg from '../../../public/asset2/react-iphone-mockup.png'
 
 
 
@@ -23,17 +30,45 @@ export const useProjectStore = create<ProjectState>((set, get) => {
       {
         name: "HTML CSS JS",
         url: "/html-css-js",
-        image: "@/public/asset2/html-css-js.png",
+        image: imgHtml,
+        des:'okay awfawfvawfvafvaefvefvef'
       },
       {
-        name: "Church Website",
-        url: "https://mfmchurchweb.vercel.app",
-        image: "/images/church.png",
+        name: "React.Ts $ js",
+        url: "/react-projects",
+        image: reactimg,
+        des:''
       },
       {
-        name: "Housing SPA (Angular)",
-        url: "https://housing-spa.netlify.app",
-        image: "/images/housing.png",
+        name: "Angular",
+        url: "/angular-projects",
+        image: angularimg,
+        des:''
+      },
+      {
+        name: ".NET MVC ",
+        url: "/dotnet-mvc-projects",
+        image: dotnetmvcimg,
+        des:''
+      },
+      
+      {
+        name: " WEB_API ASP.NET ",
+        url: "/dotnet-webapi-projects",
+        image: dotnetwebapiimg,
+        des:''
+      },
+      {
+        name: " WEB_API NodeJs ",
+        url: "/nodejs-projects",
+        image: nodejsimg,
+        des:''
+      },
+      {
+        name: " Next.ts app ",
+        url: "next-projects",
+        image: nextimg,
+        des:''
       },
     ],
     currentIndex: 0,
