@@ -5,3 +5,15 @@ TanStack Query (React Query) — master it (big demand, perfect for Next.js).
 Zustand — lightweight client state, very popular and easier than Redux.
 
 Redux Toolkit — learn later for enterprise-level interviews.
+
+ <div className="indicator flex justify-center gap-2 mt-4 absolute bottom-4 w-full">
+              {projects.map((_, index) => (
+                <div
+                  key={index}
+                  onClick={() => goTo(index)}
+                  className={`dot w-[12px] h-[12px] rounded-full cursor-pointer ${
+                    currentIndex === index ? "bg-black" : "bg-gray-400"
+                  }`}
+                ></div>
+              ))}
+            </div>
