@@ -36,7 +36,12 @@ const Projects1 = () => {
             <div className="slider   flex justify-center px-[20px] md:px-[50px] relative mt-[30px] ">
                 <div className="slide group relative flex justify-center  w-full max-w-[900px] bg-[white] shadow-lg min-h-[60vh] p-[40px] ">
                     <div className="img max-w-[900px] h-[60vh] ">
-                        <Image width={100} height={100} src={project.image} alt=''/>
+                        <Image
+                        width={900}
+                        height={600}
+                        className="object-contain"
+                        src={project.image} alt=''
+                        />
                     </div>
                     
                     <div className="cover absolute bottom-0 w-full transition-all duration-1000 ease-linear h-full  md:h-0 md:group-hover:h-full bg-[rgba(0,0,0,0.5)] cursor-pointer overflow-hidden z-[300]  ">
