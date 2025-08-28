@@ -1,7 +1,7 @@
 import { useAllprojectstore } from '@/features/allprojects/store'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
 
   const{
     // allprojectscard
@@ -24,4 +24,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
