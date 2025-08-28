@@ -2,9 +2,9 @@ import { useAllprojectstore } from '@/features/allprojects/store'
 import React from 'react'
 
 const page = () => {
-  
+
   const{
-    allprojectscard
+    // allprojectscard
   }=useAllprojectstore()
 
 

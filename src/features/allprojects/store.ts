@@ -31,7 +31,7 @@
 import { create } from "zustand";
 import { AllprojectsState } from "./types";
 
-export const useAllprojectstore = create<AllprojectsState>((set) => ({
+export const useAllprojectstore = create<AllprojectsState>(() => ({
   allprojectscard: [
     {
       id: 1,
