@@ -1,3 +1,4 @@
+'use client';
 import { useAllprojectstore } from '@/features/allprojects/store'
 import React from 'react'
 
