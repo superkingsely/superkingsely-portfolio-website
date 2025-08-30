@@ -35,8 +35,23 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
   allprojectscard: [
     {
       id: 1,
-      category: "html-css-js",
+      category: "/html-css-js",
       title: "portfolio-website",
+    },
+    {
+      id: 2,
+      category: "/html-css-js",
+      title: "portfolio-website2",
+    },
+    {
+      id: 3,
+      category: "/html-css-js",
+      title: "portfolio-website3",
+    },
+    {
+      id: 4,
+      category: "/react-projects",
+      title: "portfolio-website4",
     },
   ],
   allprojectsdetails: [
