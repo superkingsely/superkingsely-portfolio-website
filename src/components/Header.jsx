@@ -28,7 +28,7 @@ const Header = () => {
 // }, [window.innerWidth]);
   return (
     <header className='sticky top-0 z-[999]'>
-        <div className="header-content min-h-[10vh] max-w-[1200px] mx-auto flex justify-between items-center  relative px-[20px] md:px-[0px] bg-white ">
+        <div className="header-content min-h-[10vh] max-w-[1200px] mx-auto flex justify-between items-center  relative px-[20px] shadow-lg bg-white ">
             <span className="logo">Superking</span>
 
             <nav onClick={toggleSidebar} className={`absolute md:static md:h-[10vh] top-0  transition-all duration-1000 ease-linear right-0 overflow-hidden ${isSidebarOpen?'w-[50vw] bg-gray-200 ':'w-[0vw] '} md:w-full md:bg-white h-[100vh] `} >

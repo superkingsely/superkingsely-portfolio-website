@@ -1,16 +1,25 @@
 import React from 'react'
+import Title from './Title'
+import Image from 'next/image'
+import contactimg from '../../public/asset2/coding-programming.png'
+
 // -->
 const Contact = () => {
   return (
-   <div  className='min-h-[70vh] pt-[50px] mt-[30px]  ' id='contact' >
-       <div className="contact-row flex flex-col sm:flex-row  gap-[20px] ">
+   <div  className='min-h-[70vh] pt-[50px] mt-[30px] max-w-[1200px] shadow-lg pb-[30px]  mx-auto ' id='contact' >
+        <div className="title">
+          <Title word1='contact' word2='me'/>
+        </div>
+       <div className="contact-row grid grid-cols-1 md:grid-cols-2 mt-[30px] ">
           <div className="contact-col-1 ps-[50px] sm:ps-[0px] ">
             <div className="flex flex-col gap-5 ">
-              <span className='font-[600] text-[50px]  ' >Contact me</span>
-              <span className='font-[600] text-[40px]  '  >08029696733</span>
+              {/* <span className='font-[600] text-[40px]  '  >08029696733</span> */}
+              <div className="img">
+                <Image src={contactimg} alt='' width={300} height={50}  className="object-contain"  />
+              </div>
             </div>
           </div>
-          <div className="contact-col-2  flex-1">
+          <div className="contact-col-2 flex flex-col justify-center ">
             <form className='px-[50px] ' action="">
               <div className="form-group">
                 <input placeholder='Name:' className='w-full rounded-lg p-[5px] mt-[20px] bg-slate-400 ' type="text" />

@@ -12,7 +12,7 @@ const About = () => {
     //         <div className="details"></div>
     //     </div>
     // </div>
-    <div className="content about max-w-[1200px] mx-auto ">
+    <div className="content about max-w-[1200px] mx-auto shadow-lg mt-[20px] ">
 
 <div className=" mx-auto p-6   " id='about' >
   <div className="h1 mb-4 mt-[50px] flex justify-center ">

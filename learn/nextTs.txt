@@ -38,3 +38,10 @@ src/
  │         ├── api.ts
  │         └── types.ts
  auth projects nav and all that
+
+  <Image
+                        width={900}
+                        height={600}
+                        className="object-contain"
+                        src={project.image} alt=''
+                        />

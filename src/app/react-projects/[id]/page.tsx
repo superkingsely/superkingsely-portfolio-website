@@ -22,9 +22,9 @@ const Page = () => {
   },[])
   return (
     <div>
-      <div className='max-w-[1200px] mx-auto my-[50px] bg-[rgba(0,0,0,0.05)] p-[20px] ' >
+      <div className='max-w-[1200px] mx-auto mt-[50px] bg-gray-300 p-[20px] ' >
           <div className="screen">
-              <div className="title text-2xl ">{projectObjDetails.title}</div>
+              <div className="title">{projectObjDetails.title}</div>
               <div className="img w-full border h-[60vh] mt-[20px] ">
 
               </div>
