@@ -5,11 +5,11 @@ import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
 const Page = () => {
-  
+  // <projectsdetail|any>
   const{
-    allprojectscard,allprojectsdetails
+    allprojectsdetails
   }=useAllprojectstore()
-  const [projectObjDetails,setProjectObjDetails]=useState<projectsdetail|any>({})
+  const [projectObjDetails,setProjectObjDetails]=useState<projectsdetail>({} as projectsdetail)
   const params=useParams()
 
   useEffect(()=>{
