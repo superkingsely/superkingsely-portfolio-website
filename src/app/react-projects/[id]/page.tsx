@@ -9,7 +9,7 @@ const Page = () => {
   const{
     allprojectscard,allprojectsdetails
   }=useAllprojectstore()
-  const [projectObjDetails,setProjectObjDetails]=useState<projectsdetail|any>({})
+  const [projectObjDetails,setProjectObjDetails]=useState<projectsdetail>({} as projectsdetail)
   const params=useParams()
 
   useEffect(()=>{
