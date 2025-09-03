@@ -35,7 +35,7 @@ useEffect(()=>{
               return(
 
           <Link key={obj.id} href={`${obj.category}/${obj.id}`}>
-            <ProjectCard projectTitle={obj.title}/>
+            <ProjectCard projectTitle={obj.title} img={obj.img}  />
           </Link>
               )
             })
