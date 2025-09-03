@@ -1,0 +1,2 @@
+tailwind-bg
+bg-[url('/images/bg.jpg')] bg-cover bg-center
