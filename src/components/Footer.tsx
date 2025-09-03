@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Mysocials from '../components/Mysocials'
 
 const Footer = () => {
   return (
@@ -17,18 +19,18 @@ const Footer = () => {
                   <Link href={'#home'}>Home</Link>
                 </li>|
                 <li>
-                  <Link href={'#home'}>Home</Link>
+                  <Link href={'#about'}>About</Link>
                 </li>|
                 <li>
-                  <Link href={'#home'}>Home</Link>
+                  <Link href={'#projects'}>Projects</Link>
                 </li>
               </ul>
             </div>
             <div className="socials">
-
+               <Mysocials/>
             </div>
             <div className="copy">
-
+                <p>Privacy & Legal</p>
             </div>
         </div>
     </footer>

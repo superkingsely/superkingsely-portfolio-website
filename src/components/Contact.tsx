@@ -2,6 +2,7 @@ import React from 'react'
 import Title from './Title'
 import Image from 'next/image'
 import contactimg from '../../public/asset2/coding-programming.png'
+import Mysocials from './Mysocials'
 
 // -->
 const Contact = () => {
@@ -12,9 +13,12 @@ const Contact = () => {
         </div>
        <div className="contact-row grid grid-cols-1 md:grid-cols-2 mt-[30px] ">
           <div className="contact-col-1 ps-[50px] sm:ps-[0px] ">
-            <div className="flex flex-col gap-5 ">
-              {/* <span className='font-[600] text-[40px]  '  >08029696733</span> */}
-              <div className="img">
+            <div className="flex flex-col gap-5 items-center relative ">
+              <span className='font-[600] text-[35px] md:text-[40px]  absolute top-0 left-0 text-[rgba(0,0,0,0.5)]   '  >08029696733</span>
+              <div className="absolute top-[80px] left-0  ">
+                <Mysocials/>
+              </div>
+              <div className="img w-[350px]  ">
                 <Image src={contactimg} alt='' width={300} height={50}  className="object-contain"  />
               </div>
             </div>
