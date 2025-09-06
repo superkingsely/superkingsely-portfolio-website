@@ -10,13 +10,13 @@ const page = () => {
         allprojectscard
       }=useAllprojectstore()
 
-      const [filhtml,setFilhtml]=useState<Projectscard[]>([] as Projectscard[])
-      const [filreact,setFilreact]=useState<Projectscard[]>([] as Projectscard[])
-      const [filangular,setFilangular]=useState<Projectscard[]>([] as Projectscard[])
-      const [filmvc,setFilmvc]=useState<Projectscard[]>([] as Projectscard[])
-      const [filwebapi,setFilwebapi]=useState<Projectscard[]>([] as Projectscard[])
-      const [filnodejs,setFilnodejs]=useState<Projectscard[]>([] as Projectscard[])
-      const [filnext,setFilnext]=useState<Projectscard[]>([] as Projectscard[])
+    //   const [filhtml,setFilhtml]=useState<Projectscard[]>([] as Projectscard[])
+    //   const [filreact,setFilreact]=useState<Projectscard[]>([] as Projectscard[])
+    //   const [filangular,setFilangular]=useState<Projectscard[]>([] as Projectscard[])
+    //   const [filmvc,setFilmvc]=useState<Projectscard[]>([] as Projectscard[])
+    //   const [filwebapi,setFilwebapi]=useState<Projectscard[]>([] as Projectscard[])
+    //   const [filnodejs,setFilnodejs]=useState<Projectscard[]>([] as Projectscard[])
+    //   const [filnext,setFilnext]=useState<Projectscard[]>([] as Projectscard[])
 
       const arry=['/html-css-js','/react-projects','/angular-projects','/dotnet-mvc-projects','/donet-webapi-projects','/next-projects','/nodejs-projects']
 
@@ -27,39 +27,39 @@ const page = () => {
         const filterhtml:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
             return obj.category===arry[0]
         })
-        setFilhtml(filterhtml)
+        // setFilhtml(filterhtml)
         
         // next
         const filterreact:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
             return obj.category===arry[1]
         })
-        setFilreact(filterreact)
+        // setFilreact(filterreact)
 
         // next
         const filterangular:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
             return obj.category===arry[2]
         })
-        setFilangular(filterangular)
+        // setFilangular(filterangular)
         // next
         const filtermvc:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
             return obj.category===arry[3]
         })
-        setFilmvc(filtermvc)
+        // setFilmvc(filtermvc)
         // next
         const filterwebapi:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
             return obj.category===arry[4]
         })
-        setFilwebapi(filterwebapi)
+        // setFilwebapi(filterwebapi)
         // next
         const filternext:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
             return obj.category===arry[5]
         })
-        setFilnext(filternext)
+        // setFilnext(filternext)
         // next
         const filternodejs:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
             return obj.category===arry[6]
         })
-        setFilnodejs(filternodejs)
+        // setFilnodejs(filternodejs)
 
         
 
