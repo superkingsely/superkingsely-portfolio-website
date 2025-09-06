@@ -9,10 +9,11 @@ const Contact = () => {
   return (
    <div  className='min-h-[70vh] pt-[50px] mt-[30px] max-w-[1200px] shadow-lg pb-[30px]  mx-auto ' id='contact' >
         <div className="title">
-          <Title word1='contact' word2='me'/>
+          <Title word1='contact me' word2=''/>
         </div>
        <div className="contact-row grid grid-cols-1 md:grid-cols-2 mt-[30px] ">
-          <div className="contact-col-1 ps-[50px] sm:ps-[0px] ">
+{/* left */}
+          <div className="contact-col-1 ps-[50px] sm:ps-[0px] py-[50px]  ">
             <div className="flex flex-col gap-5 items-center relative ">
               <span className='font-[600] text-[35px] md:text-[40px]  absolute top-0 left-0 text-[rgba(0,0,0,0.5)]   '  >08029696733</span>
               <div className="absolute top-[80px] left-0  ">
@@ -23,7 +24,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="contact-col-2 flex flex-col justify-center ">
+          {/* right */}
+          <div className="contact-col-2 flex flex-col justify-center py-[50px] ">
             <form className='px-[50px] ' action="">
               <div className="form-group">
                 <input placeholder='Name:' className='w-full rounded-lg p-[5px] mt-[20px] bg-slate-400 ' type="text" />

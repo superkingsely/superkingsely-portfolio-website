@@ -139,7 +139,7 @@ const Projects1 = () => {
             </div>
 
             {/* Overlay */}
-            <div className="cover absolute bottom-0 w-full transition-all duration-1000 ease-linear h-full md:h-0 md:group-hover:h-full bg-[rgba(0,0,0,0.5)] cursor-pointer overflow-hidden z-[300]">
+            <div className="cover absolute bottom-0 w-full transition-all duration-1000 ease-linear h-full md:h-0 md:group-hover:h-full bg-[rgba(0,0,0,0.5)] cursor-pointer overflow-hidden z-[300] px-[50px] ">
               <Link href={project.url} className="flex flex-col justify-center items-center gap-[20px] h-full">
                 
                 <div className="title">
@@ -154,13 +154,14 @@ const Projects1 = () => {
                 </div>
 
                 {/* Button */}
-                <div className="btn w-full flex justify-center">
-                  <Link
+                <div className="btn w-full flex justify-center bg-white ">
+                  {/* <Link
                     href={project.url}
                     className="bg-white max-w-[600px] w-full text-center py-[5px] font-medium"
                   >
-                    Click To View All ...
-                  </Link>
+                  Click To View All ...
+                  </Link> */}
+                  Click To View All ...
                 </div>
 
               </Link>
@@ -171,18 +172,21 @@ const Projects1 = () => {
           <div className="screen-info">
             <div
               onClick={prev}
-              className="btn left w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full shadow-lg flex justify-center items-center absolute left-[20px] top-[28vh] cursor-pointer bg-white"
+              className="btn left w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-full shadow-lg flex justify-center items-center absolute left-[20px] top-[28vh] cursor-pointer bg-white z-[400] "
             >
               <FaArrowLeft />
             </div>
 
             <div
               onClick={next}
-              className="btn right w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full shadow-lg flex justify-center items-center absolute right-[20px] top-[28vh] cursor-pointer bg-white"
+              className="btn right w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-full shadow-lg flex justify-center items-center absolute right-[20px] top-[28vh] cursor-pointer bg-white z-[400] "
             >
               <FaArrowRight />
             </div>
           </div>
+        </div>
+        <div className="btn mt-[30px] flex justify-center ">
+          <Link className='border max-w-[300px] bg-white w-full text-center py-[3px] '  href={'/all-projects'}>View All Projects</Link>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='min-h-[10vh] mt-[30px] ' >
         <div className="footer-content max-w-[1200px] mx-auto shadow-lg text-gray-400 min-h-[10vh] flex flex-col items-center py-[20px] gap-[20px] ">
-            <div className="name text-2xl ">
+            <div className="name text-2xl text-center ">
               Onwumelu chijioke, Fullstack Developer
             </div>
             <div className="des">

@@ -45,3 +45,11 @@ src/
                         className="object-contain"
                         src={project.image} alt=''
                         />
+
+
+                    product=useParams()
+                <Link href={`/products/${product.id}`}>
+              {product.name} - ${product.price}
+            </Link>
+next
+  const [projectObjDetails,setProjectObjDetails]=useState<projectsdetail>({} as projectsdetail)
