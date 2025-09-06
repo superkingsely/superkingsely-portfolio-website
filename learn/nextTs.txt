@@ -53,3 +53,14 @@ src/
             </Link>
 next
   const [projectObjDetails,setProjectObjDetails]=useState<projectsdetail>({} as projectsdetail)
+  
+  next
+  React components must start with an uppercase letter.
+
+✅ AllProjectsPage
+
+❌ page
+
+Hooks can only be called inside function components or custom hooks.
+
+In the Next.js App Router, the file name page.tsx doesn’t matter — Next.js will pick it up anyway. What matters is the function’s name inside.

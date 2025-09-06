@@ -5,7 +5,7 @@ import { Projectscard } from '@/features/allprojects/types'
 import Link from 'next/link';
 import  {  useEffect, useState } from 'react'
 
-const page = () => {
+const Page = () => {
     const{
         allprojectscard
       }=useAllprojectstore()
@@ -122,4 +122,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
