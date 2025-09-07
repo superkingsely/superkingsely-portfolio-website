@@ -18,7 +18,7 @@ const Page = () => {
     //   const [filnodejs,setFilnodejs]=useState<Projectscard[]>([] as Projectscard[])
     //   const [filnext,setFilnext]=useState<Projectscard[]>([] as Projectscard[])
 
-      const arry=['/html-css-js','/react-projects','/angular-projects','/dotnet-mvc-projects','/donet-webapi-projects','/next-projects','/nodejs-projects']
+      const arry=['/html-css-js','/react-projects','/angular-projects','/dotnet-mvc-projects','/dotnet-webapi-projects','/next-projects','/nodejs-projects']
 
       const [allarryproject,setAllarryproject]=useState<Projectscard[][]>([] as Projectscard[][])
 
@@ -47,6 +47,13 @@ const Page = () => {
         // setFilmvc(filtermvc)
         // next
         const filterwebapi:Projectscard[]=allprojectscard.filter((obj:Projectscard)=>{
+
+            // if(obj.category===arry[4]) {
+            //     console.log('true here',obj.category,arry[4])
+            // }else{
+            //     console.log('not true',obj.category,arry[4])
+            // }
+
             return obj.category===arry[4]
         })
         // setFilwebapi(filterwebapi)
@@ -64,10 +71,10 @@ const Page = () => {
         
 
 
-        const allarry=[filterhtml,filterreact,filternext,filterangular,filtermvc,filterwebapi,filternodejs]
+        const allarry=[filterhtml,filterreact,filterangular,filtermvc,filterwebapi,filternext,filternodejs]
         setAllarryproject(allarry)
 
-        // console.log(allarryproject,'effect');
+        // console.log(allarryproject,'effect',filterwebapi,allarryproject);
         
       },[])
 

@@ -42,6 +42,7 @@ import myreactport1 from '../../../public/projects hero sec img/my-react-proj-1.
 import myreactport2 from '../../../public/projects hero sec img/myreactport-2.png'
 import realestateangular from '../../../public/projects hero sec img/spa-angular-app.png'
 import reactMernEcom from '../../../public/projects hero sec img/react-mern-ecom.png'
+import stockwebapinet from '../../../public/projects hero sec img/stocks-net-web-api.png'
 
 
 
@@ -118,6 +119,12 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       category: "/react-projects",
       title: "React-MERN-stack E-commerce App",
       img:reactMernEcom
+    },
+    {
+      id: 13,
+      category: "/dotnet-webapi-projects",
+      title: "Stocks .Net web-api project",
+      img:stockwebapinet
     },
     // {
     //   id: 2,
@@ -240,9 +247,18 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       title: "React-MERN-stack E-commerce App",
       img: reactMernEcom,
       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
-      src: "https://github.com/superkingsely/mypersonal-portfolio-react",
-      live: "https://housing-spa.firebaseapp.com/",
+      src: "https://github.com/superkingsely/MERN-stack",
+      live: "h",
       category: "react-projects",
+    },
+    {
+      id: 13,
+      title: "Stocks .Net web-api project",
+      img: stockwebapinet,
+      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      src: "https://github.com/superkingsely/stocks-web-api/tree/master",
+      live: "h",
+      category: "dotnet-webapi-projects",
     },
     //https://new-website-drivelink.vercel.app/
     //https://github.com/superkingsely/html-css-portfolio-website
