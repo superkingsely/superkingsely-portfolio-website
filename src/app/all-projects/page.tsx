@@ -102,7 +102,7 @@ const Page = () => {
                 <div key={index} className='obj' >
                     <div className="sub-title border text-[rgba(66,66,66,0.7)] text-3xl flex justify-center py-[3px] font-[600] bg-white rounded-lg  ">
                             {/* ?? */}
-                        <span className='' >   {obj[0]?.category.slice(1) || `No project Uploaded for ${arry[index-1].slice(1)} yet` }  </span>
+                        <span className='' >   {obj[0]?.category.slice(1) || `No project Uploaded for ${arry[index].slice(1)} yet` }  </span>
                     </div>
                     <div className="sub-all-projects grid grid-cols-1 md:grid-cols-3 my-[40px] gap-[10px]  ">
                         {
