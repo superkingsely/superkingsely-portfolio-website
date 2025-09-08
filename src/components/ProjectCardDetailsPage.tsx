@@ -32,7 +32,11 @@ const ProjectCardDetailsPage = () => {
               </div>
           </div>
           <div className="des flex justify-center text-center mt-[20px] ">
-            {projectObjDetails.des}
+            <span>{projectObjDetails.des}
+
+             <Link target='_blank' className='text-blue-500'  href={`${projectObjDetails.src}`}> Read More (readMe File)...</Link>
+            </span>
+           
               
           </div>
           <div className="btn  flex gap-[10px] mt-[20px] ">
