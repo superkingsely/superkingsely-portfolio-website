@@ -126,6 +126,12 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       title: "Stocks .Net web-api project",
       img:stockwebapinet
     },
+    {
+      id: 14,
+      category: "/nodejs-projects",
+      title: "NodeJs-MERN-stack E-commerce App",
+      img:reactMernEcom
+    },
     // {
     //   id: 2,
     //   category: "/html-css-js",
@@ -183,7 +189,7 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       id: 5,
       title: "MY PORTFOLIO WEBSITE",
       img: mywebsite,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "This is my personal portfolio website built to showcase my skills, experience, and web development projects.It is designed with a modern, responsive, and professional UI to create a lasting impression for recruiters and collaborators. ",
       src: "https://github.com/superkingsely/superkingsely-portfolio-website",
       live: "https://superkingsely-portfolio-website.vercel.app",
       category: "next-projects",
@@ -246,9 +252,9 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       id: 12,
       title: "React-MERN-stack E-commerce App",
       img: reactMernEcom,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "This is a Full-Stack MERN (MongoDB, Express, React, Node.js) application that demonstrates the power of combining modern frontend and backend technologies.The project is structured into separate folders for frontend, backend, and admin to maintain scalability and clean architecture. ",
       src: "https://github.com/superkingsely/MERN-stack",
-      live: "h",
+      live: "",
       category: "react-projects",
     },
     {
@@ -257,8 +263,17 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       img: stockwebapinet,
       des: "A .NET 8 Web API built to manage stock-related data.It provides a structured backend with CRUD operations, DTO mapping, repository pattern, and Entity Framework Core for database management. ",
       src: "https://github.com/superkingsely/stocks-web-api/tree/master",
-      live: "h",
+      live: "",
       category: "dotnet-webapi-projects",
+    },
+    {
+      id: 14,
+      title: "NodeJs-MERN-stack E-commerce App",
+      img: reactMernEcom,
+      des: "This is a Full-Stack MERN (MongoDB, Express, React, Node.js) application that demonstrates the power of combining modern frontend and backend technologies.The project is structured into separate folders for frontend, backend, and admin to maintain scalability and clean architecture. ",
+      src: "https://github.com/superkingsely/MERN-stack",
+      live: "",
+      category: "nodejs-projects",
     },
     //https://new-website-drivelink.vercel.app/
     //https://github.com/superkingsely/html-css-portfolio-website

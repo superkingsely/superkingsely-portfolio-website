@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header className='sticky top-0 z-[999]'>
         <div className="header-content min-h-[10vh] max-w-[1200px] mx-auto flex justify-between items-center  relative px-[20px] shadow-lg bg-white ">
-            <span className="logo">Superking</span>
+            <span className="logo text-2xl font-[600] md:text-3xl ">Superking</span>
 
             <nav onClick={toggleSidebar} className={`absolute md:static md:h-[10vh] top-0  transition-all duration-1000 ease-linear right-0 overflow-hidden ${isSidebarOpen?'w-[50vw] bg-gray-200 ':'w-[0vw] '} md:w-full md:bg-white h-[100vh] `} >
                 <ul className={` mt-[15vh] md:mt-[0] flex flex-col gap-[20px] md:flex-row md:justify-end md:items-center md:h-[10vh] `} >

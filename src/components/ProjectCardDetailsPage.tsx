@@ -40,8 +40,8 @@ const ProjectCardDetailsPage = () => {
               
           </div>
           <div className="btn  flex gap-[10px] mt-[20px] ">
-              <Link target="_blank" className='flex-1 border flex justify-center bg-blue-300 py-[5px] font-[700] ' href={`${projectObjDetails.src}`}>SRC</Link>
-              <Link target="_blank" className='flex-1 border flex justify-center bg-green-300 py-[5px] font-[700] ' href={`${projectObjDetails.live}`}>LIVE</Link>
+              <Link target="_blank" className={`flex-1 border flex justify-center bg-blue-300 py-[5px] font-[700] `} href={`${projectObjDetails.src}`}>SRC</Link>
+              <Link target="_blank"  className={`flex-1 border  justify-center bg-green-300 py-[5px] font-[700] ${projectObjDetails.live===''?'hidden':'flex'} `} href={`${projectObjDetails.live}`}>LIVE</Link>
           </div>
       </div>
     </div>
