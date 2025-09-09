@@ -27,7 +27,7 @@ const ProjectCardDetailsPage = () => {
       <div className='max-w-[1200px] mx-auto my-[50px] bg-[rgba(0,0,0,0.05)] p-[20px] ' >
           <div className="screen">
               <div className="title text-2xl ">{projectObjDetails.title}</div>
-              <div className="img w-full border h-[60vh] mt-[20px] ">
+              <div className="img w-full border border-[rgba(0,0,0,0.3)] h-[60vh] mt-[20px] ">
                   <Image priority  src={projectObjDetails.img || "/fallback.png"} alt='image' width={600} height={300} />
               </div>
           </div>
@@ -40,8 +40,8 @@ const ProjectCardDetailsPage = () => {
               
           </div>
           <div className="btn  flex gap-[10px] mt-[20px] ">
-              <Link target="_blank" className={`flex-1 border flex justify-center bg-blue-300 py-[5px] font-[700] `} href={`${projectObjDetails.src}`}>SRC</Link>
-              <Link target="_blank"  className={`flex-1 border  justify-center bg-green-300 py-[5px] font-[700] ${projectObjDetails.live===''?'hidden':'flex'} `} href={`${projectObjDetails.live}`}>LIVE</Link>
+              <Link target="_blank" className={`flex-1 border border-[rgba(0,0,0,0.3)] flex justify-center bg-blue-300 py-[5px] font-[700] `} href={`${projectObjDetails.src}`}>SRC</Link>
+              <Link target="_blank"  className={`flex-1 border border-[rgba(0,0,0,0.3)]  justify-center bg-green-300 py-[5px] font-[700] ${projectObjDetails.live===''?'hidden':'flex'} `} href={`${projectObjDetails.live}`}>LIVE</Link>
           </div>
       </div>
     </div>

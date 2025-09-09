@@ -43,6 +43,7 @@ import myreactport2 from '../../../public/projects hero sec img/myreactport-2.pn
 import realestateangular from '../../../public/projects hero sec img/spa-angular-app.png'
 import reactMernEcom from '../../../public/projects hero sec img/react-mern-ecom.png'
 import stockwebapinet from '../../../public/projects hero sec img/stocks-net-web-api.png'
+import NextQuickcart from '../../../public/projects hero sec img/next-ecom-fullstack.png'
 
 
 
@@ -131,6 +132,12 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       category: "/nodejs-projects",
       title: "NodeJs-MERN-stack E-commerce App",
       img:reactMernEcom
+    },
+    {
+      id: 15,
+      category: "/next-projects",
+      title: "Next-MERN E-commerce Project",
+      img:NextQuickcart
     },
     // {
     //   id: 2,
@@ -274,6 +281,15 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       src: "https://github.com/superkingsely/MERN-stack",
       live: "",
       category: "nodejs-projects",
+    },
+    {
+      id: 15,
+      title: "Next-MERN-stack E-commerce Project",
+      img: NextQuickcart,
+      des: "An elegant fullstack e-commerce application built with Next.js, Tailwind CSS, and modern best practices.Quick Cart provides a smooth shopping experience with cart management, product display, and responsive design. ",
+      src: "https://github.com/superkingsely/quick-cart-fullstack/tree/main",
+      live: "https://quick-cart-fullstack-f5zl.vercel.app/",
+      category: "next-projects",
     },
     //https://new-website-drivelink.vercel.app/
     //https://github.com/superkingsely/html-css-portfolio-website
