@@ -16,11 +16,11 @@ const ProjectCardpage = () => {
   
 
 useEffect(()=>{
-  console.log(path,param,allprojectscard,'net')
+  console.log(path,param,allprojectscard,'net come on')
   setFilterarray(prev=>{
     return prev.filter((obj:Projectscard)=>obj.category===path)
   })
-},[allprojectscard])
+},[])
 
   return (
     <div>
@@ -35,7 +35,7 @@ useEffect(()=>{
               return(
 
           <Link key={obj.id} href={`${obj.category}/${obj.id}`} className='' >
-            <ProjectCard projectTitle={obj.title} img={obj.img}  />
+            <ProjectCard  data={obj} />
           </Link>
               )
             })

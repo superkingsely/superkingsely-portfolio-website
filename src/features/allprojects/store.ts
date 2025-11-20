@@ -1,166 +1,51 @@
-// import { create } from "zustand";
-// import { AllprojectsState, Projectscard, projectsdetail } from "./types";
 
 
-
-
-// export const useAllprojectstore=create<AllprojectsState>((set)=>{
-
-//     return{
-//         allprojectscard:[
-//             {
-//                 id:1,
-//                 category:'html-css-js',
-//                 title:'portfolio-website'
-//             }
-//         ],
-//         allprojectsdetails:[
-//             {
-//                 id:1,
-//                 title:'porfolio-website',
-//                 image:'',
-//                 des:'',
-//                 src:'',
-//                 live:'',
-//                 category:'html-css-js'
-//             }
-//         ]
-//     }
-// })
 
 import { create } from "zustand";
 import { AllprojectsState } from "./types";
-import movieapp from '../../../public/projects hero sec img/movie-app-js.png'
-import drivelikapp from '../../../public/projects hero sec img/Drivelink-app.png'
-import drivelikapphtml from '../../../public/projects hero sec img/drivelinkhtml.png'
-import mfmijaiye from '../../../public/projects hero sec img/mountain of fire.png'
-import mywebsite from '../../../public/projects hero sec img/myporfoliowebsite.png'
-import todolisthtml from '../../../public/projects hero sec img/todo-list-completed.png'
-import animatedcss from '../../../public/projects hero sec img/hc-portfolio.png'
-import vanillajs from '../../../public/projects hero sec img/hcj portf.png'
-import myreactport1 from '../../../public/projects hero sec img/my-react-proj-1.png'
-import myreactport2 from '../../../public/projects hero sec img/myreactport-2.png'
-import realestateangular from '../../../public/projects hero sec img/spa-angular-app.png'
-import reactMernEcom from '../../../public/projects hero sec img/react-mern-ecom.png'
-import stockwebapinet from '../../../public/projects hero sec img/stocks-net-web-api.png'
-import NextQuickcart from '../../../public/projects hero sec img/next-ecom-fullstack.png'
 
-
+import movieapp from '../../../public/projects hero sec img/movie-app-js.png';
+import drivelikapp from '../../../public/projects hero sec img/Drivelink-app.png';
+import drivelikapphtml from '../../../public/projects hero sec img/drivelinkhtml.png';
+import mfmijaiye from '../../../public/projects hero sec img/mountain of fire.png';
+import mywebsite from '../../../public/projects hero sec img/myporfoliowebsite.png';
+import todolisthtml from '../../../public/projects hero sec img/todo-list-completed.png';
+import animatedcss from '../../../public/projects hero sec img/hc-portfolio.png';
+import vanillajs from '../../../public/projects hero sec img/hcj portf.png';
+import myreactport1 from '../../../public/projects hero sec img/my-react-proj-1.png';
+import myreactport2 from '../../../public/projects hero sec img/myreactport-2.png';
+import realestateangular from '../../../public/projects hero sec img/spa-angular-app.png';
+import reactMernEcom from '../../../public/projects hero sec img/react-mern-ecom.png';
+import stockwebapinet from '../../../public/projects hero sec img/stocks-net-web-api.png';
+import NextQuickcart from '../../../public/projects hero sec img/next-ecom-fullstack.png';
+import safehabourimg from '../../../public/images/PngItem_safehabour-api.png';
 
 export const useAllprojectstore = create<AllprojectsState>(() => ({
   allprojectscard: [
-    {
-      id: 1,
-      category: "/html-css-js",
-      title: "movie-app-website",
-      img:movieapp
-    },
-    {
-      id: 2,
-      category: "/next-projects",
-      title: "DriveLink-App",
-      img:drivelikapp
-    },
-    {
-      id: 3,
-      category: "/html-css-js",
-      title: "DriveLink-App-html",
-      img:drivelikapphtml
-    },
-    {
-      id: 4,
-      category: "/next-projects",
-      title: "MFM Ijaiye Church website",
-      img:mfmijaiye
-    },
-    {
-      id: 5,
-      category: "/next-projects",
-      title: "MY PORTFOLIO WEBSITE",
-      img:mywebsite
-    },
-    {
-      id: 6,
-      category: "/html-css-js",
-      title: "TO-DO LIST app",
-      img:todolisthtml
-    },
-    {
-      id: 7,
-      category: "/html-css-js",
-      title: "Animated css website",
-      img:animatedcss
-    },
-    {
-      id: 8,
-      category: "/html-css-js",
-      title: "Vanilla-js portfolio-website",
-      img:vanillajs
-    },
-    {
-      id: 9,
-      category: "/react-projects",
-      title: "My React Portfolio-website-1",
-      img:myreactport1
-    },
-    {
-      id: 10,
-      category: "/react-projects",
-      title: "My React Portfolio-website-2",
-      img:myreactport2
-    },
-    {
-      id: 11,
-      category: "/angular-projects",
-      title: "Real-Estate-app AngularJs",
-      img:realestateangular
-    },
-    {
-      id: 12,
-      category: "/react-projects",
-      title: "React-MERN-stack E-commerce App",
-      img:reactMernEcom
-    },
-    {
-      id: 13,
-      category: "/dotnet-webapi-projects",
-      title: "Stocks .Net web-api project",
-      img:stockwebapinet
-    },
-    {
-      id: 14,
-      category: "/nodejs-projects",
-      title: "NodeJs-MERN-stack E-commerce App",
-      img:reactMernEcom
-    },
-    {
-      id: 15,
-      category: "/next-projects",
-      title: "Next-MERN E-commerce Project",
-      img:NextQuickcart
-    },
-    // {
-    //   id: 2,
-    //   category: "/html-css-js",
-    //   title: "portfolio-website2",
-    // },
-    // {
-    //   id: 3,
-    //   category: "/html-css-js",
-    //   title: "portfolio-website3",
-    // },
-    // {
-    //   id: 4,
-    //   category: "/react-projects",
-    //   title: "portfolio-website4",
-    // },
+    { id: 1, category: "html-css-js", title: "movie-app-website", img: movieapp },
+    { id: 2, category: "next-projects", title: "DriveLink-App", img: drivelikapp },
+    { id: 3, category: "html-css-js", title: "DriveLink-App-html", img: drivelikapphtml },
+    { id: 4, category: "next-projects", title: "MFM Ijaiye Church website", img: mfmijaiye },
+    { id: 5, category: "next-projects", title: "MY PORTFOLIO WEBSITE", img: mywebsite },
+    { id: 6, category: "html-css-js", title: "TO-DO LIST app", img: todolisthtml },
+    { id: 7, category: "html-css-js", title: "Animated css website", img: animatedcss },
+    { id: 8, category: "html-css-js", title: "Vanilla-js portfolio-website", img: vanillajs },
+    { id: 9, category: "react-projects", title: "My React Portfolio-website-1", img: myreactport1 },
+    { id: 10, category: "react-projects", title: "My React Portfolio-website-2", img: myreactport2 },
+    { id: 11, category: "angular-projects", title: "Real-Estate-app AngularJs", img: realestateangular },
+    { id: 12, category: "react-projects", title: "React-MERN-stack E-commerce App", img: reactMernEcom },
+    { id: 13, category: "dotnet-webapi-projects", title: "Stocks .Net web-api project", img: stockwebapinet },
+    { id: 14, category: "nodejs-projects", title: "NodeJs-MERN-stack E-commerce App", img: reactMernEcom },
+    { id: 15, category: "next-projects", title: "Next-MERN E-commerce Project", img: NextQuickcart },
+    { id: 16, category: "dotnet-webapi-projects", title: "SafeHabour API", img: safehabourimg },
   ],
+
   allprojectsdetails: [
     {
       id: 1,
       title: "movie-app-website",
       img: movieapp,
-      des: "This is a responsive and interactive movie listing web application built using pure HTML, CSS, and JavaScript. The app allows users to browse movies, search for titles, and view ratings in a clean, modern UI.",
+      des: "A responsive movie listing app built with HTML, CSS, and Vanilla JavaScript.",
       src: "https://github.com/superkingsely/movie-app",
       live: "https://movie-app-js-three.vercel.app",
       category: "html-css-js",
@@ -169,7 +54,7 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       id: 2,
       title: "DriveLink-App",
       img: drivelikapp,
-      des: "DriveLink App is a modern web application built with Next.js + TypeScript.It provides a sleek, responsive user interface and serves as part of the DriveLink platform, making navigation, user engagement, and content delivery seamless. ",
+      des: "A modern web application built with Next.js + TypeScript for the DriveLink platform.",
       src: "https://github.com/superkingsely/Drivelink-app",
       live: "https://new-website-drivelink.vercel.app",
       category: "next-projects",
@@ -178,7 +63,7 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       id: 3,
       title: "DriveLink-App-HTML",
       img: drivelikapphtml,
-      des: "DriveLink is a modern, responsive landing page website designed to showcase the DriveLink app.It highlights the app/'s features, download links, and key information with a clean and user-friendly design.",
+      des: "A responsive landing page for the DriveLink app, built with HTML, CSS, JS.",
       src: "https://github.com/superkingsely/Drivelink",
       live: "https://first-drivelink.vercel.app",
       category: "html-css-js",
@@ -187,7 +72,7 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       id: 4,
       title: "MFM Ijaiye Church website",
       img: mfmijaiye,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "A clean and modern church website showcasing sections, ministries, and media.",
       src: "https://github.com/superkingsely/ijaiye-church-website",
       live: "https://ijaiye-church-website.vercel.app",
       category: "next-projects",
@@ -196,134 +81,482 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       id: 5,
       title: "MY PORTFOLIO WEBSITE",
       img: mywebsite,
-      des: "This is my personal portfolio website built to showcase my skills, experience, and web development projects.It is designed with a modern, responsive, and professional UI to create a lasting impression for recruiters and collaborators. ",
+      des: "A personal developer portfolio showcasing skills and past projects.",
       src: "https://github.com/superkingsely/superkingsely-portfolio-website",
       live: "https://superkingsely-portfolio-website.vercel.app",
       category: "next-projects",
     },
     {
       id: 6,
-      title: "TO-DO LIST app",
+      title: "TO-DO LIST App",
       img: todolisthtml,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "A simple and responsive To-Do List app made with HTML, CSS and JavaScript.",
       src: "https://github.com/superkingsely/todolist-app",
       live: "https://superking-todolist-app.netlify.app",
       category: "html-css-js",
     },
     {
       id: 7,
-      title: "Animated css website",
+      title: "Animated CSS Website",
       img: animatedcss,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "A creative animated website built using advanced CSS animations.",
       src: "https://github.com/superkingsely/html-css-portfolio-website",
       live: "https://hc-portf.netlify.app",
       category: "html-css-js",
     },
     {
       id: 8,
-      title: "Vanilla-js portfolio-website",
+      title: "Vanilla JS Portfolio Website",
       img: vanillajs,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "A beautiful portfolio website created using Vanilla JavaScript.",
       src: "https://github.com/superkingsely/portfolio-web-site-hcj1",
       live: "https://hcj-portf.netlify.app",
       category: "html-css-js",
     },
     {
       id: 9,
-      title: "My React Portfolio-website-1",
+      title: "React Portfolio Website 1",
       img: myreactport1,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "A responsive React portfolio website showcasing frontend development skills.",
       src: "https://github.com/superkingsely/chi-Personal-Portfolio-React",
       live: "https://chijioke-portfolio.netlify.app",
       category: "react-projects",
     },
     {
       id: 10,
-      title: "My React Portfolio-website-2",
+      title: "React Portfolio Website 2",
       img: myreactport2,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+      des: "A second version of a React portfolio website with improved UI/UX.",
       src: "https://github.com/superkingsely/mypersonal-portfolio-react",
       live: "https://chijioke-portfolio1.netlify.app",
       category: "react-projects",
     },
     {
       id: 11,
-      title: "Real-Estate-app AngularJs",
+      title: "Real-Estate Angular App",
       img: realestateangular,
-      des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
-      src: "https://github.com/superkingsely/mypersonal-portfolio-react",
-      live: "https://housing-spa.firebaseapp.com/",
+      des: "A single-page real estate application built with Angular.",
+      src: "https://github.com/superkingsely/angular-real-estate",
+      live: "https://housing-spa.firebaseapp.com",
       category: "angular-projects",
     },
     {
       id: 12,
-      title: "React-MERN-stack E-commerce App",
+      title: "React MERN E-commerce App",
       img: reactMernEcom,
-      des: "This is a Full-Stack MERN (MongoDB, Express, React, Node.js) application that demonstrates the power of combining modern frontend and backend technologies.The project is structured into separate folders for frontend, backend, and admin to maintain scalability and clean architecture. ",
+      des: "A complete MERN e-commerce application with frontend, backend, and admin UI.",
       src: "https://github.com/superkingsely/MERN-stack",
       live: "",
       category: "react-projects",
     },
     {
       id: 13,
-      title: "Stocks .Net web-api project",
+      title: "Stocks .NET Web API",
       img: stockwebapinet,
-      des: "A .NET 8 Web API built to manage stock-related data.It provides a structured backend with CRUD operations, DTO mapping, repository pattern, and Entity Framework Core for database management. ",
-      src: "https://github.com/superkingsely/stocks-web-api/tree/master",
+      des: "A .NET 8 Web API for stock management with EF Core and repository pattern.",
+      src: "https://github.com/superkingsely/stocks-web-api",
       live: "",
       category: "dotnet-webapi-projects",
     },
     {
       id: 14,
-      title: "NodeJs-MERN-stack E-commerce App",
+      title: "NodeJs MERN-stack App",
       img: reactMernEcom,
-      des: "This is a Full-Stack MERN (MongoDB, Express, React, Node.js) application that demonstrates the power of combining modern frontend and backend technologies.The project is structured into separate folders for frontend, backend, and admin to maintain scalability and clean architecture. ",
+      des: "A MERN-stack application with Node.js backend.",
       src: "https://github.com/superkingsely/MERN-stack",
       live: "",
       category: "nodejs-projects",
     },
     {
       id: 15,
-      title: "Next-MERN-stack E-commerce Project",
+      title: "Next MERN E-commerce Project",
       img: NextQuickcart,
-      des: "An elegant fullstack e-commerce application built with Next.js, Tailwind CSS, and modern best practices.Quick Cart provides a smooth shopping experience with cart management, product display, and responsive design. ",
-      src: "https://github.com/superkingsely/quick-cart-fullstack/tree/main",
-      live: "https://quick-cart-fullstack-f5zl.vercel.app/",
+      des: "A fullstack Next.js + MongoDB e-commerce platform.",
+      src: "https://github.com/superkingsely/quick-cart-fullstack",
+      live: "https://quick-cart-fullstack-f5zl.vercel.app",
       category: "next-projects",
     },
-    //https://new-website-drivelink.vercel.app/
-    //https://github.com/superkingsely/html-css-portfolio-website
-    //https://github.com/superkingsely/portfolio-web-site-hcj1
-    //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/Drivelink-app
-    //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/DriveLink
-    //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/ijaiye-church-website
-    //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/superkingsely-portfolio-website
-    // {
-    //   id: 2,
-    //   title: "portfolio-website2",
-    //   img: "",
-    //   des: "2okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
-    //   src: "",
-    //   live: "",
-    //   category: "html-css-js",
-    // },
-    // {
-    //   id: 3,
-    //   title: "portfolio-website3",
-    //   img: "",
-    //   des: "3okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
-    //   src: "",
-    //   live: "",
-    //   category: "html-css-js",
-    // },
-    // {
-    //   id: 4,
-    //   title: " react portfolio-website3",
-    //   img: "",
-    //   des: "3okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
-    //   src: "",
-    //   live: "",
-    //   category: "html-css-js",
-    // },
+    {
+      id: 16,
+      title: "SafeHabour .NET Web API",
+      img: safehabourimg,
+      des: "A production-ready .NET 8 Web API with authentication, roles, EF Core, and clean architecture.",
+      src: "https://github.com/superkingsely/SafeHabour",
+      live: "",
+      category: "dotnet-webapi-projects",
+    },
   ],
 }));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // import { create } from "zustand";
+// // import { AllprojectsState, Projectscard, projectsdetail } from "./types";
+
+
+
+
+// // export const useAllprojectstore=create<AllprojectsState>((set)=>{
+
+// //     return{
+// //         allprojectscard:[
+// //             {
+// //                 id:1,
+// //                 category:'html-css-js',
+// //                 title:'portfolio-website'
+// //             }
+// //         ],
+// //         allprojectsdetails:[
+// //             {
+// //                 id:1,
+// //                 title:'porfolio-website',
+// //                 image:'',
+// //                 des:'',
+// //                 src:'',
+// //                 live:'',
+// //                 category:'html-css-js'
+// //             }
+// //         ]
+// //     }
+// // })
+
+// import { create } from "zustand";
+// import { AllprojectsState } from "./types";
+// import movieapp from '../../../public/projects hero sec img/movie-app-js.png'
+// import drivelikapp from '../../../public/projects hero sec img/Drivelink-app.png'
+// import drivelikapphtml from '../../../public/projects hero sec img/drivelinkhtml.png'
+// import mfmijaiye from '../../../public/projects hero sec img/mountain of fire.png'
+// import mywebsite from '../../../public/projects hero sec img/myporfoliowebsite.png'
+// import todolisthtml from '../../../public/projects hero sec img/todo-list-completed.png'
+// import animatedcss from '../../../public/projects hero sec img/hc-portfolio.png'
+// import vanillajs from '../../../public/projects hero sec img/hcj portf.png'
+// import myreactport1 from '../../../public/projects hero sec img/my-react-proj-1.png'
+// import myreactport2 from '../../../public/projects hero sec img/myreactport-2.png'
+// import realestateangular from '../../../public/projects hero sec img/spa-angular-app.png'
+// import reactMernEcom from '../../../public/projects hero sec img/react-mern-ecom.png'
+// import stockwebapinet from '../../../public/projects hero sec img/stocks-net-web-api.png'
+// import NextQuickcart from '../../../public/projects hero sec img/next-ecom-fullstack.png'
+// import safehabourimg from '../../../public/images/PngItem_safehabour-api.png'
+
+
+
+// export const useAllprojectstore = create<AllprojectsState>(() => ({
+//   allprojectscard: [
+//     {
+//       id: 1,
+//       category: "/html-css-js",
+//       title: "movie-app-website",
+//       img:movieapp
+//     },
+//     {
+//       id: 2,
+//       category: "/next-projects",
+//       title: "DriveLink-App",
+//       img:drivelikapp
+//     },
+//     {
+//       id: 3,
+//       category: "/html-css-js",
+//       title: "DriveLink-App-html",
+//       img:drivelikapphtml
+//     },
+//     {
+//       id: 4,
+//       category: "/next-projects",
+//       title: "MFM Ijaiye Church website",
+//       img:mfmijaiye
+//     },
+//     {
+//       id: 5,
+//       category: "/next-projects",
+//       title: "MY PORTFOLIO WEBSITE",
+//       img:mywebsite
+//     },
+//     {
+//       id: 6,
+//       category: "/html-css-js",
+//       title: "TO-DO LIST app",
+//       img:todolisthtml
+//     },
+//     {
+//       id: 7,
+//       category: "/html-css-js",
+//       title: "Animated css website",
+//       img:animatedcss
+//     },
+//     {
+//       id: 8,
+//       category: "/html-css-js",
+//       title: "Vanilla-js portfolio-website",
+//       img:vanillajs
+//     },
+//     {
+//       id: 9,
+//       category: "/react-projects",
+//       title: "My React Portfolio-website-1",
+//       img:myreactport1
+//     },
+//     {
+//       id: 10,
+//       category: "/react-projects",
+//       title: "My React Portfolio-website-2",
+//       img:myreactport2
+//     },
+//     {
+//       id: 11,
+//       category: "/angular-projects",
+//       title: "Real-Estate-app AngularJs",
+//       img:realestateangular
+//     },
+//     {
+//       id: 12,
+//       category: "/react-projects",
+//       title: "React-MERN-stack E-commerce App",
+//       img:reactMernEcom
+//     },
+//     {
+//       id: 13,
+//       category: "/dotnet-webapi-projects",
+//       title: "Stocks .Net web-api project",
+//       img:stockwebapinet
+//     },
+//     {
+//       id: 14,
+//       category: "/nodejs-projects",
+//       title: "NodeJs-MERN-stack E-commerce App",
+//       img:reactMernEcom
+//     },
+//     {
+//       id: 15,
+//       category: "/next-projects",
+//       title: "Next-MERN E-commerce Project",
+//       img:NextQuickcart
+//     },
+//     // {
+//     //   id: 2,
+//     //   category: "/html-css-js",
+//     //   title: "portfolio-website2",
+//     // },
+//     // {
+//     //   id: 3,
+//     //   category: "/html-css-js",
+//     //   title: "portfolio-website3",
+//     // },
+//     // {
+//     //   id: 4,
+//     //   category: "/react-projects",
+//     //   title: "portfolio-website4",
+//     // },
+//   ],
+//   allprojectsdetails: [
+//     {
+//       id: 1,
+//       title: "movie-app-website",
+//       img: movieapp,
+//       des: "This is a responsive and interactive movie listing web application built using pure HTML, CSS, and JavaScript. The app allows users to browse movies, search for titles, and view ratings in a clean, modern UI.",
+//       src: "https://github.com/superkingsely/movie-app",
+//       live: "https://movie-app-js-three.vercel.app",
+//       category: "html-css-js",
+//     },
+//     {
+//       id: 2,
+//       title: "DriveLink-App",
+//       img: drivelikapp,
+//       des: "DriveLink App is a modern web application built with Next.js + TypeScript.It provides a sleek, responsive user interface and serves as part of the DriveLink platform, making navigation, user engagement, and content delivery seamless. ",
+//       src: "https://github.com/superkingsely/Drivelink-app",
+//       live: "https://new-website-drivelink.vercel.app",
+//       category: "next-projects",
+//     },
+//     {
+//       id: 3,
+//       title: "DriveLink-App-HTML",
+//       img: drivelikapphtml,
+//       des: "DriveLink is a modern, responsive landing page website designed to showcase the DriveLink app.It highlights the app/'s features, download links, and key information with a clean and user-friendly design.",
+//       src: "https://github.com/superkingsely/Drivelink",
+//       live: "https://first-drivelink.vercel.app",
+//       category: "html-css-js",
+//     },
+//     {
+//       id: 4,
+//       title: "MFM Ijaiye Church website",
+//       img: mfmijaiye,
+//       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//       src: "https://github.com/superkingsely/ijaiye-church-website",
+//       live: "https://ijaiye-church-website.vercel.app",
+//       category: "next-projects",
+//     },
+//     {
+//       id: 5,
+//       title: "MY PORTFOLIO WEBSITE",
+//       img: mywebsite,
+//       des: "This is my personal portfolio website built to showcase my skills, experience, and web development projects.It is designed with a modern, responsive, and professional UI to create a lasting impression for recruiters and collaborators. ",
+//       src: "https://github.com/superkingsely/superkingsely-portfolio-website",
+//       live: "https://superkingsely-portfolio-website.vercel.app",
+//       category: "next-projects",
+//     },
+//     {
+//       id: 6,
+//       title: "TO-DO LIST app",
+//       img: todolisthtml,
+//       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//       src: "https://github.com/superkingsely/todolist-app",
+//       live: "https://superking-todolist-app.netlify.app",
+//       category: "html-css-js",
+//     },
+//     {
+//       id: 7,
+//       title: "Animated css website",
+//       img: animatedcss,
+//       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//       src: "https://github.com/superkingsely/html-css-portfolio-website",
+//       live: "https://hc-portf.netlify.app",
+//       category: "html-css-js",
+//     },
+//     {
+//       id: 8,
+//       title: "Vanilla-js portfolio-website",
+//       img: vanillajs,
+//       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//       src: "https://github.com/superkingsely/portfolio-web-site-hcj1",
+//       live: "https://hcj-portf.netlify.app",
+//       category: "html-css-js",
+//     },
+//     {
+//       id: 9,
+//       title: "My React Portfolio-website-1",
+//       img: myreactport1,
+//       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//       src: "https://github.com/superkingsely/chi-Personal-Portfolio-React",
+//       live: "https://chijioke-portfolio.netlify.app",
+//       category: "react-projects",
+//     },
+//     {
+//       id: 10,
+//       title: "My React Portfolio-website-2",
+//       img: myreactport2,
+//       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//       src: "https://github.com/superkingsely/mypersonal-portfolio-react",
+//       live: "https://chijioke-portfolio1.netlify.app",
+//       category: "react-projects",
+//     },
+//     {
+//       id: 11,
+//       title: "Real-Estate-app AngularJs",
+//       img: realestateangular,
+//       des: "okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//       src: "https://github.com/superkingsely/mypersonal-portfolio-react",
+//       live: "https://housing-spa.firebaseapp.com/",
+//       category: "angular-projects",
+//     },
+//     {
+//       id: 12,
+//       title: "React-MERN-stack E-commerce App",
+//       img: reactMernEcom,
+//       des: "This is a Full-Stack MERN (MongoDB, Express, React, Node.js) application that demonstrates the power of combining modern frontend and backend technologies.The project is structured into separate folders for frontend, backend, and admin to maintain scalability and clean architecture. ",
+//       src: "https://github.com/superkingsely/MERN-stack",
+//       live: "",
+//       category: "react-projects",
+//     },
+//     {
+//       id: 13,
+//       title: "Stocks .Net web-api project",
+//       img: stockwebapinet,
+//       des: "A .NET 8 Web API built to manage stock-related data.It provides a structured backend with CRUD operations, DTO mapping, repository pattern, and Entity Framework Core for database management. ",
+//       src: "https://github.com/superkingsely/stocks-web-api/tree/master",
+//       live: "",
+//       category: "dotnet-webapi-projects",
+//     },
+//     {
+//       id: 14,
+//       title: "NodeJs-MERN-stack E-commerce App",
+//       img: reactMernEcom,
+//       des: "This is a Full-Stack MERN (MongoDB, Express, React, Node.js) application that demonstrates the power of combining modern frontend and backend technologies.The project is structured into separate folders for frontend, backend, and admin to maintain scalability and clean architecture. ",
+//       src: "https://github.com/superkingsely/MERN-stack",
+//       live: "",
+//       category: "nodejs-projects",
+//     },
+//     {
+//       id: 15,
+//       title: "Next-MERN-stack E-commerce Project",
+//       img: NextQuickcart,
+//       des: "An elegant fullstack e-commerce application built with Next.js, Tailwind CSS, and modern best practices.Quick Cart provides a smooth shopping experience with cart management, product display, and responsive design. ",
+//       src: "https://github.com/superkingsely/quick-cart-fullstack/tree/main",
+//       live: "https://quick-cart-fullstack-f5zl.vercel.app/",
+//       category: "next-projects",
+//     },
+//    {
+//   id: 16,
+//   title: ".NET Web API Project (SafeHabour)",
+//   img: safehabourimg,
+//   des: "A production-ready backend API built with .NET 8, featuring clean architecture, JWT authentication, role-based access, repository & service layers, DTO mapping, and Swagger documentation. Includes seeded roles/users and structured database design using Entity Framework Core.",
+//   src: "https://github.com/superkingsely/SafeHabour",  
+//   live: "", 
+//   category: "dotnet-webapi-projects",
+// },
+//  {
+//       id: 17,
+//       title: "Stocks .Net web-api project",
+//       img: stockwebapinet,
+//       des: "A .NET 8 Web API built to manage stock-related data.It provides a structured backend with CRUD operations, DTO mapping, repository pattern, and Entity Framework Core for database management. ",
+//       src: "https://github.com/superkingsely/stocks-web-api/tree/master",
+//       live: "",
+//       category: "dotnet-webapi-projects",
+//     },
+
+//     //https://new-website-drivelink.vercel.app/
+//     //https://github.com/superkingsely/html-css-portfolio-website
+//     //https://github.com/superkingsely/portfolio-web-site-hcj1
+//     //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/Drivelink-app
+//     //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/DriveLink
+//     //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/ijaiye-church-website
+//     //https://vercel.com/superkingselys-projects?repo=https://github.com/superkingsely/superkingsely-portfolio-website
+//     // {
+//     //   id: 2,
+//     //   title: "portfolio-website2",
+//     //   img: "",
+//     //   des: "2okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//     //   src: "",
+//     //   live: "",
+//     //   category: "html-css-js",
+//     // },
+//     // {
+//     //   id: 3,
+//     //   title: "portfolio-website3",
+//     //   img: "",
+//     //   des: "3okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//     //   src: "",
+//     //   live: "",
+//     //   category: "html-css-js",
+//     // },
+//     // {
+//     //   id: 4,
+//     //   title: " react portfolio-website3",
+//     //   img: "",
+//     //   des: "3okaysfjioajsfviafjisjfjfkjvklfl Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet iure nisi quos tempora delectus molestiae unde ex distinctio, error quam magnam fuga est quas eius ab veniam tempore expedita? ",
+//     //   src: "",
+//     //   live: "",
+//     //   category: "html-css-js",
+//     // },
+//   ],
+// }));
