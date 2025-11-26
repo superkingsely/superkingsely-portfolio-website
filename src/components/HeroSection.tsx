@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
           <div className=" z-[1] flex gap-4 mt-[20px] justify-center sm:justify-start ">
         <a
-          href='/Onwumelu_Chijioke_CV.pdf'
+          href='/MASTER-CV-chijioke.docx'
           download
           className=" z-10 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
         >

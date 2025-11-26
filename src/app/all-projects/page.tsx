@@ -4,6 +4,7 @@
 import { useAllprojectstore } from '@/features/allprojects/store';
 import ProjectCard from '@/components/ProjectCard';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Page = () => {
   const { allprojectscard } = useAllprojectstore();
@@ -33,7 +34,7 @@ const Page = () => {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-2 rounded-lg border transition 
+            className={`px-4 py-2 rounded-lg border transition cursor-pointer 
               ${activeCategory === cat ? "bg-black text-white" : "bg-white border-gray-300"}`}
           >
             {cat.replace("-", " ").toUpperCase()}
@@ -45,7 +46,13 @@ const Page = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <ProjectCard key={project.id} data={project} />
+             <Link
+              key={project.id}
+              href={`${project.category}/${project.id}`}
+              className="block"
+            >
+              <ProjectCard data={project} />
+            </Link>
           ))
         ) : (
           <p className="text-center w-full">No projects found in this category.</p>

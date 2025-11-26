@@ -50,7 +50,7 @@ const About = () => {
       </p>
       <div className="mt-4 flex gap-4 justify-center sm:justify-start  ">
         <a
-          href="/Onwumelu_Chijioke_CV.pdf"
+          href="/MASTER-CV-chijioke.docx"
           download
           className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
         >
