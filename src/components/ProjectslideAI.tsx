@@ -52,34 +52,41 @@ const ProjectslideAI = () => {
             className="relative group bg-white shadow-xl rounded-xl overflow-hidden min-h-[60vh]"
           >
 
-            {/* Project Image */}
-            <div className="w-full h-[60vh]">
-              <Image
-                src={project.image}
-                alt={project.name}
-                width={900}
-                height={600}
-                className="w-full h-full object-contain p-6"
-              />
-            </div>
+           {/* Image */}
+<div className="img w-full h-[250px] sm:h-[350px] md:h-[60vh] flex justify-center items-center">
+  <Image
+    src={project.image}
+    alt={project.name}
+    width={900}
+    height={600}
+    className="object-contain w-full h-full"
+    priority
+  />
+</div>
 
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-[rgba(0,0,0,0.6)] opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center text-center px-6 cursor-pointer">
-              
-              <Link href={project.url} className="w-full h-full flex flex-col justify-center items-center">
-                <h2 className="text-white text-4xl md:text-6xl font-bold mb-4">
-                  {project.name}
-                </h2>
+{/* Overlay */}
+<div className="cover absolute inset-0 h-full 
+    md:h-0 md:group-hover:h-full 
+    transition-all duration-700 bg-black/50 
+    z-[300] px-[20px] sm:px-[40px] cursor-pointer">
 
-                <p className="text-white max-w-[600px] text-lg mb-6">
-                  {project.des || "Click to explore all projects in this category."}
-                </p>
+  <Link href={project.url} className="flex flex-col justify-center items-center gap-5 h-full">
+    <span className="text-white text-[32px] sm:text-[50px] md:text-[70px] font-bold">
+      {project.name}
+    </span>
 
-                <button className="bg-white text-black px-8 py-2 rounded-lg shadow font-semibold hover:bg-gray-200">
-                  View Category
-                </button>
-              </Link>
-            </div>
+    <p className="text-white max-w-[600px] text-center">
+      {project.des || "No description yet"}
+    </p>
+
+    <div className="bg-white text-black px-6 py-2 rounded-md shadow-md">
+      Click To View All ...
+    </div>
+  </Link>
+
+</div>
+
+
           </motion.div>
 
           {/* Navigation Buttons */}
