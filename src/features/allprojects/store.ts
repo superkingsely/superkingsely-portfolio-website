@@ -19,6 +19,7 @@ import reactMernEcom from '../../../public/projects hero sec img/react-mern-ecom
 import stockwebapinet from '../../../public/projects hero sec img/stocks-net-web-api.png';
 import NextQuickcart from '../../../public/projects hero sec img/next-ecom-fullstack.png';
 import safehabourimg from '../../../public/images/PngItem_safehabour-api.png';
+import builderTutor from '../../../public/projects hero sec img/builda-tutor.png';
 
 export const useAllprojectstore = create<AllprojectsState>(() => ({
   allprojectscard: [
@@ -38,6 +39,7 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
     { id: 14, category: "nodejs-projects", title: "NodeJs-MERN-stack E-commerce App", img: reactMernEcom },
     { id: 15, category: "next-projects", title: "Next-MERN E-commerce Project", img: NextQuickcart },
     { id: 16, category: "dotnet-webapi-projects", title: "SafeHabour API", img: safehabourimg },
+    { id: 17, category: "next-projects", title: "builda project tutor", img: builderTutor },
   ],
 
   allprojectsdetails: [
@@ -184,6 +186,15 @@ export const useAllprojectstore = create<AllprojectsState>(() => ({
       src: "https://github.com/superkingsely/SafeHabour",
       live: "",
       category: "dotnet-webapi-projects",
+    },
+     {
+      id: 17,
+      title: "Tutor courses with builda",
+      img: builderTutor,
+      des: "A NextTs frontend website",
+      src: "https://github.com/superkingsely/builda-tutor-website",
+      live: "",
+      category: "next-projects",
     },
   ],
 }));
